@@ -1,0 +1,75 @@
+.home {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  .info-section {
+    padding: 55px;
+    width: 15%;
+  }
+  .content-area {
+    background: white;
+    width: 75%; // or 85
+    margin-left: 35%; //or 25
+    // padding: 0 0 0 25%;
+    height: 100%;
+    // overflow: hidden;
+
+    .img-container {
+      display: inline-block;
+      width: 30%;
+      position: relative;
+      height: 100%;
+
+      .user-img {
+        position: absolute;
+        top: 55px;
+        left: -180px;
+        width: 400px;
+        height: 770px; //calc(100% - 112px); //or
+        background: url("../img/mayowDev.png") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        border-radius: 10px;
+        // box shadow
+        -webkit-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+        -moz-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+        box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+      }
+    }
+
+    // navbar /menu
+    // .top-nav {
+    //   vertical-align: top;
+    //   display: inline-block;
+    // }
+
+    .profile-section {
+      vertical-align: top;
+      display: inline-block;
+      max-width: 500px;
+      padding: 19% 0 0;
+      .profile {
+        h1 {
+          font-size: 2.3rem;
+          font-weight: 600;
+          line-height: 1.2;
+          margin: 0 0 1.1rem;
+          span {
+            color: $color1;
+          }
+        }
+        h5 {
+          font-size: 1.2rem;
+          margin: 0 0 2rem;
+        }
+        p {
+          color: $color2;
+          font-weight: 300;
+          line-height: 1.4rem;
+          margin: 0 0 2rem;
+        }
+      }
+    }
+  }
+}

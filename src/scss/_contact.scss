@@ -1,0 +1,118 @@
+.contact {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  .info-section {
+    padding: 55px;
+    width: 35%; // or 15%
+  }
+  .content-area {
+    background: white;
+    width: 65%; //or 85
+    margin-left: 38%; //or 25 this controls the blue
+    // padding: 0 0 0 25%;
+    height: 100%;
+    // overflow: hidden; //it makes contact area go above the blue section
+
+    .img-container {
+      display: inline-block;
+      width: 30%;
+      position: relative;
+      height: 100%;
+
+      .form-section {
+        position: absolute;
+        top: 55px;
+        left: -220px; //or -250
+        width: 400px;
+        height: calc(100% - 112px);
+        background: $color2;
+        color: $color3;
+        padding: 46px;
+        h4 {
+          font-size: 1.4rem;
+          margin-top: 3rem;
+          margin-bottom: 4rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: 100%;
+          background: transparent;
+          border: none;
+          border-bottom: 2px solid $color5;
+          margin-bottom: 2rem;
+          font-size: 0.9rem;
+          text-transform: capitalize;
+          line-height: 1.2rem;
+          color: white;
+          // padding: 14px 0px;
+        }
+        button[type="submit"] {
+          cursor: pointer;
+          background: $color1;
+          border: none;
+          color: $color3;
+          text-align: center;
+          letter-spacing: 3px;
+          text-transform: capitalize;
+          display: inline-block;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          border-radius: 30px;
+          padding: 17px 30px;
+          width: 100%;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    // navbar /menu
+    .top-nav {
+      vertical-align: top;
+      display: inline-block;
+    }
+
+    .contact-section {
+      vertical-align: top;
+      display: inline-block;
+      max-width: 500px;
+      padding: 150px 0 0;
+
+      // contact me
+      .contact-info {
+        padding: 0 0 0 70px;
+        left: 50px;
+        h1 {
+          font-size: 2.3rem;
+          font-weight: 600;
+          line-height: 1.2;
+          margin: 0 0 1.1rem;
+          span {
+            color: $color1;
+          }
+        }
+        .contact-box {
+          padding: 20px;
+          transition: all 0.5 ease-in-out;
+          cursor: pointer;
+          &:hover {
+            -webkit-box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12);
+            -moz-box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12);
+          }
+          h5 {
+            font-size: 1.2rem;
+            margin: 0 0 2rem;
+          }
+          p {
+            color: $color2;
+            font-weight: 300;
+            line-height: 1.4rem;
+            margin: 0 0 2rem;
+          }
+        }
+      }
+    }
+  }
+}
